@@ -6,7 +6,6 @@ import { BsInstagram } from 'react-icons/bs';
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Logo from '../assets/img/LogoI-black.svg'
 
 export default function NBar() {
@@ -46,9 +45,9 @@ export default function NBar() {
                     </Nav>
                     <span className='navbar-text' >
                         <div className='social-icon'>
-                            <a href="#"><BsLinkedin className='img'/></a>
-                            <a href="#"><BsGithub className='img'/></a>
-                            <a href="#"><BsInstagram className='img'/></a>
+                            <a href="https://www.linkedin.com/in/eberth-castro-294aa7196/"><BsLinkedin className='img'/></a>
+                            <a href="https://github.com/EberthCastro?tab=repositories"><BsGithub className='img'/></a>
+                            <a href="https://www.instagram.com/"><BsInstagram className='img'/></a>
                         </div>
                         <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
                     </span>
