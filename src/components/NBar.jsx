@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import Logo from '../assets/img/LogoI-black.svg'
 
 export default function NBar() {
     const [activeLink, setActiveLink] = useState('home')
@@ -31,7 +32,7 @@ export default function NBar() {
         <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={''} alt='IsaacDev' />
+                    <img src={Logo} alt='IsaacDev' className='logo-personal'/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className='navbar-toggler-icon' ></span>

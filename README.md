@@ -10,3 +10,4 @@ Bootstrap:
           @import "~bootstrap/scss/bootstrap";
 
 3. For icons: npm install react-icons --save
+4. For multi-carrousel: npm i react-multi-carousel
