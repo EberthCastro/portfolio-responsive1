@@ -11,3 +11,4 @@ Bootstrap:
 
 3. For icons: npm install react-icons --save
 4. For multi-carrousel: npm i react-multi-carousel
+5. For mailchimp subscribe: npm i react-mailchimp-subscribe

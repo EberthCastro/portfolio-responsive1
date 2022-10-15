@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { BsGithub } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs'
+import { BsLinkedin } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
