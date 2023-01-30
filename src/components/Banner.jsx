@@ -7,7 +7,7 @@ import  Header  from '../assets/img/header-img.svg'
 export default function Banner() {
   const [ loopNum, setLoopNum ] = useState(0)
   const [ isDeleting, setIsDeleting ] = useState(false)
-  const toRotate = [ 'Isaac', 'Web Developer', 'Web Designer', 'UI/UX Designer']
+  const toRotate = [ 'Full Stack Web Developer']
   const [ text, setText ] = useState('')
   const [ delta, setDelta ] = useState(300 - Math.random() * 100)
   const period = 1000
@@ -45,11 +45,9 @@ export default function Banner() {
         <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
             <span className='tagline'>Welcome to my Portfolio</span>
-            <h1>{`Hi I'm `}<span className='wrap'>{text}</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate error perspiciatis reprehenderit eaque porro cumque, 
-              illum vitae exercitationem! Voluptates quod deserunt placeat tenetur.
-              Accusamus sit voluptatem neque? Suscipit, dignissimos expedita!</p>
+            {/* <h1>{`Hi I'm `}<span className='wrap'>{text}</span></h1> */}
+            <h1><span className='wrap'>Full Stack Web Developer</span></h1>
+            <p>Soy desarrollador Junior, a lo largo de mi formación he desarrollado la capacidad de negociar y trabajar en equipo, analizar ideas, desarrollar teorías y llevarlas a la práctica. tengo la capacidad de anticipar problemas y planificar soluciones. Es por eso que gustaría trabajar en un proyecto de Backend</p>
             <button onClick={() => console.log('connect')}>Let's connect<BsArrowRightCircleFill size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
