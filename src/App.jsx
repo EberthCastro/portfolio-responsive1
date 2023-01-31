@@ -13,10 +13,10 @@ export default function App() {
         <div>
             <NBar/>
             <Banner/>
-            <Skills/>
+            {/* <Skills/> */}
             <Projects/>
-            <Contact/>
-            <Footer/>
+            {/* <Contact/> */}
+            {/* <Footer/> */}
         </div>
     )
 }

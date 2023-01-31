@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import MailchimpForm from './MailchimpForm'
-import logo from '../assets/img/LogoI-black.svg'
+import logo from '../assets/img/pi2.jpg'
 import { BsGithub } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'

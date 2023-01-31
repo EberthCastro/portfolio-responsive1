@@ -2,7 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsArrowRightCircleFill } from 'react-icons/bs'
-import  Header  from '../assets/img/header-img.svg' 
+import  Header  from '../assets/img/particles.gif' 
+import Spline from '@splinetool/react-spline';
 
 export default function Banner() {
   const [ loopNum, setLoopNum ] = useState(0)
@@ -50,10 +51,16 @@ export default function Banner() {
             <p>Soy desarrollador Junior, a lo largo de mi formación he desarrollado la capacidad de negociar y trabajar en equipo, analizar ideas, desarrollar teorías y llevarlas a la práctica. tengo la capacidad de anticipar problemas y planificar soluciones. Es por eso que gustaría trabajar en un proyecto de Backend</p>
             <button onClick={() => console.log('connect')}>Let's connect<BsArrowRightCircleFill size={25}/></button>
           </Col>
+          
           <Col xs={12} md={6} xl={5}>
-            <img src={Header} alt='Header Img'></img>
+            
+            <Spline scene="https://prod.spline.design/dSKWSB9Y4zGZIxw9/scene.splinecode" />             
+
+                        
+  
           </Col>
         </Row>
+
       </Container>
 
     </section>
