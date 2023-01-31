@@ -292,7 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner .tagline {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.8px;
     padding: 8px 10px;
     /* color: linear-gradient(9.21deg, #1b1b1f 111.58%, #ded9dc -5.91%); */
