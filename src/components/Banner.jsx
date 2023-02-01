@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { BsArrowRightCircleFill } from 'react-icons/bs'
 import  Header  from '../assets/img/particles.gif' 
 import Spline from '@splinetool/react-spline';
+import ThreeScene from './ThreeScene'
 
 export default function Banner() {
   const [ loopNum, setLoopNum ] = useState(0)
@@ -54,14 +55,14 @@ export default function Banner() {
           
           <Col xs={12} md={6} xl={5}>
             
-            <Spline scene="https://prod.spline.design/dSKWSB9Y4zGZIxw9/scene.splinecode" />             
 
-                        
+               <ThreeScene/>         
   
           </Col>
         </Row>
 
       </Container>
+            <Spline scene="https://prod.spline.design/dSKWSB9Y4zGZIxw9/scene.splinecode" />             
 
     </section>
   )
