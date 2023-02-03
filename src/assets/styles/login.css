@@ -1,0 +1,45 @@
+.Login {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .Login form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .Login .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .Login .form-control {
+    width: 100%;
+    padding:10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    }
+
+    .Login .btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #3f51b5;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        }
+        
+        .Login .alert {
+        margin-top: 20px;
+        }
+        
+        .Login .user-details {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #ddd;
+        border-radius: 10px;
+        }

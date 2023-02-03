@@ -7,16 +7,20 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import FetchApi from './components/FetchApi'
+import Create from './components/Create'
 
 export default function App() {
     return (
         <div>
             <NBar/>
             <Banner/>
-            {/* <Skills/> */}
+            <Skills/>
             <Projects/>
             {/* <Contact/> */}
+            <FetchApi/>
             {/* <Footer/> */}
+            <Create/>
         </div>
     )
 }

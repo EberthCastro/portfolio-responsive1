@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row, Nav, Tab } from 'react-bootstrap'
 import ProjectCard from './ProjectCard'
-import colorSharp2 from '../assets/img/color-sharp2.png'
+// import colorSharp2 from '../assets/img/color-sharp2.png'
 import projImg1 from '../assets/img/js.png'
 import projImg2 from '../assets/img/reactjs.png'
 import projImg3 from '../assets/img/laravel.jfif'
@@ -83,7 +83,7 @@ export default function Projects() {
           </Col>
         </Row>
       </Container>
-      <img className='background-image-right' src={colorSharp2}></img>
+      {/* <img className='background-image-right' src={colorSharp2}></img> */}
     </section>
   )
 }

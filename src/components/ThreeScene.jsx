@@ -9,14 +9,14 @@ const ThreeScene = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const geometry = new THREE.SphereGeometry(3, 64, 64);
-    const material = new THREE.MeshStandardMaterial({ color: '#2800ab', roughness:0.5 });
+    const geometry = new THREE.SphereGeometry(3, 34, 34);
+    const material = new THREE.MeshStandardMaterial({ color: '#2800ab', roughness:0.6 });
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
     const light = new THREE.PointLight(0xffffff, 1, 100);
-    light.position.set(0, 10, 10);
-    light.intensity = 1.25;
+    light.position.set(10, 5, 5);
+    light.intensity = 2.25;
     scene.add(light);
 
     const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100);
@@ -42,8 +42,9 @@ const ThreeScene = () => {
     };
     loop();
 
-    const tl = gsap.timeline({ defaults: { duration: 1 } });
+    const tl = gsap.timeline({ defaults: { duration: 3 } });
 tl.fromTo(mesh.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
+tl.fromTo(mesh.position, {x: 0}, {x: -1});
 
 // const [mouseDown, setMouseDown] = useState(false);
 let mouseDown = false;
@@ -71,8 +72,9 @@ window.addEventListener("mousemove", (e) => {
     window.addEventListener('resize', () => {
       setSizes({ width: window.innerWidth, height: window.innerHeight });
       camera.aspect = sizes.width / sizes.height;
+      // camera.aspect = 100 / 100;
       camera.updateProjectionMatrix();
-      renderer.setSize(sizes.width, sizes.height);
+      renderer.setSize(100, 100);
     });
 
     window.requestAnimationFrame(loop);
@@ -82,7 +84,7 @@ window.addEventListener("mousemove", (e) => {
     };
   }, [sizes]);
 
-  return <canvas className="webgl" ref={mount} />;
+  return <canvas className="webgl" ref={mount}  style={{width: "50px", height: "50px"}} />;
 };
 
 export default ThreeScene;

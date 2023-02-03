@@ -43,26 +43,23 @@ export default function Banner() {
 
   return (
     <section className='banner' id='home'>
-      <Container>
+      <Container className='contenedor'>
         <Row className='align-items-center'>
-          <Col xs={12} md={6} xl={7}>
-            <span className='tagline'>Welcome to my Portfolio</span>
-            {/* <h1>{`Hi I'm `}<span className='wrap'>{text}</span></h1> */}
+          <Col xs={12} md={6} xl={6}>
+            {/* <span className='tagline'>Welcome to my Portfolio</span> */}
             <h1><span className='wrap'>Full Stack Web Developer</span></h1>
-            <p>Soy desarrollador Junior, a lo largo de mi formación he desarrollado la capacidad de negociar y trabajar en equipo, analizar ideas, desarrollar teorías y llevarlas a la práctica. tengo la capacidad de anticipar problemas y planificar soluciones. Es por eso que gustaría trabajar en un proyecto de Backend</p>
+            <p>Tecnologías trabajadas: Javascript, React Js y Ts, Php, Laravel, Mysql</p>
             <button onClick={() => console.log('connect')}>Let's connect<BsArrowRightCircleFill size={25}/></button>
           </Col>
           
-          <Col xs={12} md={6} xl={5}>
-            
-
-               <ThreeScene/>         
-  
+          <Col xs={12} md={6} xl={6}>
+               {/* <ThreeScene/>               */} 
+                     <Spline scene="https://prod.spline.design/dSKWSB9Y4zGZIxw9/scene.splinecode" />             
+               
           </Col>
         </Row>
 
       </Container>
-            <Spline scene="https://prod.spline.design/dSKWSB9Y4zGZIxw9/scene.splinecode" />             
 
     </section>
   )

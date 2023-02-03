@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import MailchimpForm from './MailchimpForm'
-import logo from '../assets/img/pi2.jpg'
+// import logo from '../assets/img/pi2.jpg'
 import { BsGithub } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
@@ -13,7 +13,7 @@ export default function Footer() {
                 <Row className='align-item-center'>
                     <MailchimpForm />
                     <Col sm={6}>
-                        <img src={logo} alt="Logo" className='logo-personal'/>
+                        {/* <img src={logo} alt="Logo" className='logo-personal'/> */}
                     </Col>
                     <Col sm={6} className='text-center text-sm-end'>
                         <div className='social-icon'>
