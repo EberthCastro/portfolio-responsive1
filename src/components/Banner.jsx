@@ -5,8 +5,9 @@ import { BsArrowRightCircleFill } from 'react-icons/bs'
 import  Header  from '../assets/img/particles.gif' 
 import Spline from '@splinetool/react-spline';
 import ThreeScene from './ThreeScene'
+import NBar from './NBar'
 
-export default function Banner() {
+function Banner() {
   const [ loopNum, setLoopNum ] = useState(0)
   const [ isDeleting, setIsDeleting ] = useState(false)
   const toRotate = [ 'Full Stack Web Developer']
@@ -42,6 +43,8 @@ export default function Banner() {
   }
 
   return (
+    <>
+    <NBar/>
     <section className='banner' id='home'>
       <Container className='contenedor'>
         <Row className='align-items-center'>
@@ -62,5 +65,8 @@ export default function Banner() {
       </Container>
 
     </section>
+    </>
   )
 }
+
+export default Banner

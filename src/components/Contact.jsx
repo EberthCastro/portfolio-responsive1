@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import contactImg from '../assets/img/contact-img.svg'
 
-export default function Contact() {
+function Contact() {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -84,3 +84,5 @@ export default function Contact() {
     </section>
   )
 }
+
+export default Contact

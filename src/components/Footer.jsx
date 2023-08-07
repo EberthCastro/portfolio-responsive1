@@ -6,7 +6,7 @@ import { BsGithub } from 'react-icons/bs'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
 
-export default function Footer() {
+function Footer() {
     return (
         <footer className='footer'>
             <Container>
@@ -28,3 +28,5 @@ export default function Footer() {
         </footer>
     )
 }
+
+export default Footer

@@ -9,18 +9,15 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import FetchApi from './components/FetchApi'
 import Create from './components/Create'
+import ShowProject from './components/ShowProject'
+import RoutesPortf from './routes/RoutesPortf'
+import { BrowserRouter } from 'react-router-dom'
+import './App.css'
 
 export default function App() {
     return (
-        <div>
-            <NBar/>
-            <Banner/>
-            <Skills/>
-            <Projects/>
-            {/* <Contact/> */}
-            <FetchApi/>
-            {/* <Footer/> */}
-            <Create/>
-        </div>
+        <BrowserRouter>
+            <RoutesPortf />
+        </BrowserRouter>
     )
 }
